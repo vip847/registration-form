@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <title>Form</title>
+        <style>
+            body{
+                background-image: url("back1.jpg");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-attachment: fixed;
+                color: aquamarine;
+            }
+            .gen{
+                margin-left: 130px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form method="post" autocomplete="on" target="_blank" name="Info">
+                <fieldset>
+                    <legend>GHRIETN Admission Form:-</legend>
+                    <fieldset>
+                        <legend>Student Details</legend>
+                        <label for="img">Select Profile Image:</label>
+                        <input type="file" id="img" name="img" accept="image/"><br>
+                        <label for="Name">Name:</label>
+                        &emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&nbsp;<input type="text" id="Name" name="Name" required><br>
+                        <label for="Email">Email:</label>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;<input type="email" name="Email" id="Email" required><br>
+                        <label for="Pass">Password: </label>
+                        &emsp; &nbsp; &emsp;&emsp;&ensp;<input type="password" name="Pass" id="Pass" required><br>
+                        <label for="mob">Mobile No.:</label>
+                        &emsp;&emsp;&emsp;&nbsp; <input type="number" name="mob" id="mob" required><br>
+                        <label for="Gender">Gender:</label><br>
+                        &ensp;<input class="gen" type="radio" name="Gender" id="male" value="Male">
+                        <label for="Male">Male</label> <br>
+                        &ensp;<input class="gen" type="radio" name="Gender" id="female" value="Female">
+                        <label for="Female">Female</label> <br>
+                        &ensp;<input class="gen" type="radio" name="Gender" id="not" value="Not">
+                        <label for="Not">Prefer not to say</label><br>
+                        <label for="dob">Date of Birth</label> 
+                        &emsp;&emsp;&emsp;<input type="date" name="dob" id="dob"><br>
+                        <label for="Adhhar">Adhhar Card No.:</label>
+                        &emsp;<input type="number" nane="Adhhar" id="Adhhar"><br>
+                        <label for="padd">Permanant Address:</label>
+                        &nbsp;<textarea name="address" id="padd" cols="30" rows="2"></textarea><br>
+                        <label for="cadd">Current Address:</label>
+                        &ensp;&emsp;<textarea name="address" id="cadd" cols="38" rows="2"></textarea><br>
+                        <label for="nation">Nationality:</label>
+                        &emsp;&emsp;&emsp;&ensp;<input type="text" name="nation" id="nation"><br>
+                        <label for="tongue">Mother Tongue:</label>
+                        &emsp;&ensp;&nbsp;<input type="text" name="tongue" id="tongue"><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Collage Details</legend>
+                        <label for="ten">10<sup>th</sup> Percentage:</label>
+                        &emsp;&ensp;<input type="number" nane="ten" id="ten"><br>
+                        <label for="twe">12<sup>th</sup> Percentage:</label>
+                        &emsp;&ensp;<input type="number" name="twe" id="twe"><br>
+                        <label for="course">course:</label>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<input type="text" name="course" id="course"><br>
+                        <label for="branch">branch:</label>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<input type="text" name="branch" id="branch"><br>
+                        <label for="y">Year of Admission:</label>
+                        &ensp;<input type="number" name="y" id="y"><br>
+                        <label for="level">Admission taken by:</label>
+                        <select name="level" id="level" required>
+                            <option value="not">Select any one</option>
+                            <option value="beginner">CET</option>
+                            <option value="Intermediate">JEE-MAIN</option>
+                            <option value="advanced">Management</option>
+                            <option value="professional">DSY</option>
+                        </select><br>
+                        <label for="3">CET/JEE Marks:</label>
+                        &emsp;&ensp;<input type="number" name="C3" id="C3"><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Parent's Details</legend>
+                        <label for="Name">Father's Name:</label>
+                        &nbsp;<input type="text" id="Name" name="Name" required><br>
+                        <label for="fnob">Mobile No.:</label>
+                        &emsp;&ensp;<input type="number" name="mob" id="mob" required><br>
+                        <label for="cc">Occupation:</label>
+                        &emsp;&ensp;<input type="text" name="occ" id="occ"><br>
+                        <label for="Name">Mother's Name: </label>
+                        <input type="text" id="Name" name="Name" required><br>
+                        <label for="mob">Mobile No.:</label>
+                        &emsp;&ensp;<input type="number" name="nmob" id="mob" required><br>
+                    </fieldset>
+                    <input type="checkbox" name="term" id="term" required>
+                    <label for="term">Yes, I agree the Terms and Conditions.</label><br>
+                    <input type="button" value="Clear">&emsp;<input type="button" value="Submit" id="myBtn">
+                </fieldset>
+            </form>
+        </div>
+        <script lang="JavaScript">
+            var btn = document.getElementById("myBtn");
+            btn.onclick = function() {
+                alert("Thanks for registration.")
+            }
+        </script>
+    </body>
+</html>
